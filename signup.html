@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: aqua;
+            -webkit-region-fragment:auto;
+            -webkit-nbsp-mode: auto;
+            }
+        input{
+            border:aqua 3px solid;
+            border-radius: 20in;
+            overflow-y: scroll;
+        }
+        button{
+            border: blueviolet 3px solid;
+            background-color: cyan;
+            text-align: center;
+            text-emphasis-color: red;
+            border-radius: 20px;
+            size: 80px;
+            font-size: 50px;
+            overflow-x: auto;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+<script>  
+    
+    var http = request('http');
+    http.createServer().listen(8081);
+
+    document.writeln("<h1>"+"THE SHOWROOM :)"+"</h1><br><br>");
+    alert("do you accept the coockies of this site.give permission to see his data on web.");
+    
+    function signuppg(name,sirname,phonenumber,dob,mailadd,passwd){
+        var a = name;
+        var b = sirname;
+        var c = phonenumber;
+        var d = dob;
+        var e = mailadd;
+        var f = passwd;
+
+        name = document.writeln("name : "+ "<input type=text name=username/>");
+        sirname = document.writeln("sirname : "+"<input type=text name=sirname /><br><br>");
+        phonenumber = document.writeln("phonenumber : "+"<input type=text name=phonenumber /><br><br>");
+        mailadd = document.writeln("e-mail : "+"<input type=email name=emailaddredd /><br><br>");
+        dob = document.writeln("D.O.B : "+"<input type=scroll name=dateofbirth /> <br><br>");
+        passwd = document.writeln("password : "+"<input type=password name=password/> <br><br>");
+        document.writeln("<button> submit </button>");
+    }
+    signuppg();
+</script>
+</body>
+</html>
+
+
