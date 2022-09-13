@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SHOWROOM | login page.</title>
+    <style>
+        body{
+            background-color: black  ;
+            color: aquamarine;
+        }
+
+        *{
+            box-sizing: border-box; 
+            margin: 0;
+    	    padding: 0;
+        }
+        
+        #loginbox{
+            box-sizing: border-box;
+            padding: 0in;
+            position: absolute;
+            border: aqua 3px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        // [+] local http server ...
+
+        var http = request('http');
+        http.createServer().listen(8081);
+ 
+    </script>
+    
+    <script>
+        // [+] local database content ....
+        
+    </script>
+    
+    <form>
+    <div class="loginbox">
+        <p> LOGIN :) (the showroom)</p><br><br>
+        <div class="username">
+            <p>Username :</p>
+            <input type="text, email, number" name="username" placeholder="enter username ..." />
+        </div>
+        <div class="password">
+            <p>Password :</p>
+            <input id='pwd' type="password" name="password" placeholder="enter password ..." />
+        </div>
+        <div class="lbtn">
+            <input id=logs type="submit" name="LOGIN" value="LOGIN"/>
+            <a href="signup.html"><input type="submit" name="signup" value="SIGNUP"/></a>
+        </div>
+    </form>
+</body>
+</html>
